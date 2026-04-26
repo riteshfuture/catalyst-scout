@@ -1,0 +1,60 @@
+Here is a concise, directly pasteable section for your `README.md` covering the scoring logic and providing a highly relevant sample input/output. 
+
+***
+
+### 🧠 Scoring Logic Breakdown
+
+The agent utilizes a two-phase evaluation logic to score and rank candidates, mimicking a human recruiter's decision-making process while optimizing for compute efficiency.
+
+**1. The Domain Filter (Pass/Fail):**
+Before any scoring occurs, the agent evaluates the Job Description (JD) to categorize its domain (Tech vs. Non-Tech). It uses Python `set()` intersections to instantly eliminate candidates outside the domain, ensuring the AI only scores relevant talent.
+
+**2. The Dual-Score Evaluation:**
+Relevant candidates are passed to the Gemini LLM (or the local fallback engine) to generate two distinct metrics:
+* **Match Score (0-100%):** The LLM strictly evaluates the overlap between the JD requirements and the candidate's Title, Skills, and Years of Experience. Penalties are applied for seniority mismatches (e.g., a junior applying for a senior role).
+* **Interest Score (0-100%):** The LLM acts as the candidate, reading their hidden "vibe" (e.g., active, passive, desperate) to simulate a realistic email reply to a recruiter outreach, assigning a percentage based on their likelihood to engage.
+
+**3. The Ranking Algorithm:**
+The final Pandas DataFrame sorts the shortlist primarily by the **Match Score** (descending). If two candidates are equally qualified, the **Interest Score** acts as the tie-breaker, pushing highly motivated candidates to the top.
+
+---
+
+### 📥 Sample Input & Output
+
+#### Scenario: Scouting for an Automation & Cloud Architect
+
+**Input: Job Description**
+> "We are looking for a Senior Cloud Automation Engineer to focus on building digital workers and scalable infrastructure. The ideal candidate must have deep expertise in RPA tools like UiPath, combined with strong cloud provisioning skills using Kubernetes, Docker, and Terraform. 5+ years of experience required."
+
+**Internal Processing:**
+The Domain Filter identifies technical keywords (`automation`, `cloud`, `UiPath`, `Terraform`) and filters out all HR, Sales, and Marketing profiles from the database before scoring.
+
+Output is given below:
+
+=====================================================================================================================
+RANK | CANDIDATE          | TITLE                   | EXP.   | MATCH | MATCH REASON                             | INT 
+=====================================================================================================================
+ 1   | Arthur Pendragon   | Senior Cloud Engineer   | 8 yrs  |  94%  | Strong overlap in Terraform, Kubernetes  | 95% 
+     |                    |                         |        |       | and Docker. Experience aligns.           |
+---------------------------------------------------------------------------------------------------------------------
+     > SIMULATED CHAT: "Thank you for reaching out! Building digital workers aligns perfectly with my goals."
+     > INTEREST REASON: Highly motivated and ready for new challenges.
+=====================================================================================================================
+ 2   | Guinevere Smith    | RPA Developer           | 6 yrs  |  88%  | Excellent UiPath background, but lacks   | 82%
+     |                    |                         |        |       | requested containerization skills.       |
+---------------------------------------------------------------------------------------------------------------------
+     > SIMULATED CHAT: "Sounds interesting. Could you send details on the team structure?"
+     > INTEREST REASON: Moderate interest based on professional curiosity.
+=====================================================================================================================
+ 3   | Lancelot Jones     | DevOps Engineer         | 2 yrs  |  45%  | Partial tech match. Junior experience    | 99%
+     |                    |                         |        |       | heavily penalized against senior req.    |
+---------------------------------------------------------------------------------------------------------------------
+     > SIMULATED CHAT: "I am ready to start immediately! When can we schedule a call?"
+     > INTEREST REASON: Desperate to leave current role, highly eager.
+=====================================================================================================================
+ 4   | Merlin Davis       | AI Agent Developer      | 12 yrs |  35%  | Experience level fits, but tech stack    | 40%
+     |                    |                         |        |       | relies on Python, not UiPath/Terraform.  |
+---------------------------------------------------------------------------------------------------------------------
+     > SIMULATED CHAT: "I'm comfortable in my current role. What is the compensation?"
+     > INTEREST REASON: Passive. Requires financial incentive.
+=====================================================================================================================

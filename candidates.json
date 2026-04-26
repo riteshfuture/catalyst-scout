@@ -1,0 +1,352 @@
+[
+    {
+        "name": "Mark Jones",
+        "title": "Financial Analyst",
+        "skills": "Financial Modeling, Excel, Variance Analysis, Forecasting, Budgeting",
+        "experience": "6 years",
+        "vibe": "Highly motivated, looking for a leadership role."
+    },
+    {
+        "name": "Isolde White",
+        "title": "HR Business Partner",
+        "skills": "Employee Relations, Performance Management, SHRM-CP, Onboarding, Compliance",
+        "experience": "13 years",
+        "vibe": "Loves learning new skills, very enthusiastic and communicative."
+    },
+    {
+        "name": "Eve Taylor",
+        "title": "Financial Analyst",
+        "skills": "Financial Modeling, Excel, Variance Analysis, Forecasting, Budgeting",
+        "experience": "7 years",
+        "vibe": "Comfortable in current job but open to remote opportunities with a salary bump."
+    },
+    {
+        "name": "Juliet Walker",
+        "title": "RPA Developer",
+        "skills": "UiPath, Blue Prism, Python, PowerShell, API Integration",
+        "experience": "9 years",
+        "vibe": "Skeptical of recruiters, needs clear compensation and JD upfront to engage."
+    },
+    {
+        "name": "Merlin Walker",
+        "title": "Data Engineer",
+        "skills": "Spark, Hadoop, Python, SQL, Snowflake",
+        "experience": "5 years",
+        "vibe": "Actively interviewing, eager to jump into a fast-paced startup environment."
+    },
+    {
+        "name": "Diana Lee",
+        "title": "Financial Analyst",
+        "skills": "Financial Modeling, Excel, Variance Analysis, Forecasting, Budgeting",
+        "experience": "3 years",
+        "vibe": "Desperate to leave current toxic workplace, ready to start immediately."
+    },
+    {
+        "name": "Grace Jones",
+        "title": "Senior Cloud Engineer",
+        "skills": "AWS, Kubernetes, Docker, Python, Bash",
+        "experience": "15 years",
+        "vibe": "Comfortable in current job but open to remote opportunities with a salary bump."
+    },
+    {
+        "name": "Lancelot Robinson",
+        "title": "Financial Analyst",
+        "skills": "Financial Modeling, Excel, Variance Analysis, Forecasting, Budgeting",
+        "experience": "3 years",
+        "vibe": "Loves learning new skills, very enthusiastic and communicative."
+    },
+    {
+        "name": "Gareth Walker",
+        "title": "Financial Analyst",
+        "skills": "Financial Modeling, Excel, Variance Analysis, Forecasting, Budgeting",
+        "experience": "3 years",
+        "vibe": "Desperate to leave current toxic workplace, ready to start immediately."
+    },
+    {
+        "name": "Peggy Taylor",
+        "title": "Data Engineer",
+        "skills": "Spark, Hadoop, Python, SQL, Snowflake",
+        "experience": "3 years",
+        "vibe": "Desperate to leave current toxic workplace, ready to start immediately."
+    },
+    {
+        "name": "Grace Taylor",
+        "title": "AI Agent Developer",
+        "skills": "Python, LangChain, OpenAI API, Streamlit, Vector DBs",
+        "experience": "3 years",
+        "vibe": "Skeptical of recruiters, needs clear compensation and JD upfront to engage."
+    },
+    {
+        "name": "Romeo Walker",
+        "title": "Marketing Coordinator",
+        "skills": "Social Media Management, SEO, Content Creation, Hootsuite, Mailchimp",
+        "experience": "6 years",
+        "vibe": "Loves learning new skills, very enthusiastic and communicative."
+    },
+    {
+        "name": "Alice Johnson",
+        "title": "Cloud Automation Engineer",
+        "skills": "Azure Virtual Desktop, Citrix, PowerShell, Terraform",
+        "experience": "8 years",
+        "vibe": "Comfortable in current job but open to remote opportunities with a salary bump."
+    },
+    {
+        "name": "Diana Taylor",
+        "title": "HR Business Partner",
+        "skills": "Employee Relations, Performance Management, SHRM-CP, Onboarding, Compliance",
+        "experience": "14 years",
+        "vibe": "Highly motivated, looking for a leadership role."
+    },
+    {
+        "name": "Trent Martin",
+        "title": "HR Business Partner",
+        "skills": "Employee Relations, Performance Management, SHRM-CP, Onboarding, Compliance",
+        "experience": "4 years",
+        "vibe": "Highly motivated, looking for a leadership role."
+    },
+    {
+        "name": "Isolde Garcia",
+        "title": "Marketing Coordinator",
+        "skills": "Social Media Management, SEO, Content Creation, Hootsuite, Mailchimp",
+        "experience": "4 years",
+        "vibe": "Desperate to leave current toxic workplace, ready to start immediately."
+    },
+    {
+        "name": "Peggy Thomas",
+        "title": "Sales Executive",
+        "skills": "B2B Sales, Salesforce, Lead Generation, Cold Calling, Contract Negotiation",
+        "experience": "5 years",
+        "vibe": "Desperate to leave current toxic workplace, ready to start immediately."
+    },
+    {
+        "name": "Romeo Moore",
+        "title": "RPA Developer",
+        "skills": "UiPath, Blue Prism, Python, PowerShell, API Integration",
+        "experience": "3 years",
+        "vibe": "Skeptical of recruiters, needs clear compensation and JD upfront to engage."
+    },
+    {
+        "name": "Heidi Martinez",
+        "title": "Data Engineer",
+        "skills": "Spark, Hadoop, Python, SQL, Snowflake",
+        "experience": "12 years",
+        "vibe": "Comfortable in current job but open to remote opportunities with a salary bump."
+    },
+    {
+        "name": "Diana Williams",
+        "title": "Senior Cloud Engineer",
+        "skills": "AWS, Kubernetes, Docker, Python, Bash",
+        "experience": "12 years",
+        "vibe": "Comfortable in current job but open to remote opportunities with a salary bump."
+    },
+    {
+        "name": "Gawain Johnson",
+        "title": "Financial Analyst",
+        "skills": "Financial Modeling, Excel, Variance Analysis, Forecasting, Budgeting",
+        "experience": "8 years",
+        "vibe": "Comfortable in current job but open to remote opportunities with a salary bump."
+    },
+    {
+        "name": "Mallory Martinez",
+        "title": "Sales Executive",
+        "skills": "B2B Sales, Salesforce, Lead Generation, Cold Calling, Contract Negotiation",
+        "experience": "7 years",
+        "vibe": "Passive. Will only respond to highly personalized, specific outreach."
+    },
+    {
+        "name": "Victor Williams",
+        "title": "AI Agent Developer",
+        "skills": "Python, LangChain, OpenAI API, Streamlit, Vector DBs",
+        "experience": "5 years",
+        "vibe": "Passive. Will only respond to highly personalized, specific outreach."
+    },
+    {
+        "name": "Guinevere Thomas",
+        "title": "Senior Cloud Engineer",
+        "skills": "AWS, Kubernetes, Docker, Python, Bash",
+        "experience": "7 years",
+        "vibe": "Skeptical of recruiters, needs clear compensation and JD upfront to engage."
+    },
+    {
+        "name": "Alice Lee",
+        "title": "Marketing Coordinator",
+        "skills": "Social Media Management, SEO, Content Creation, Hootsuite, Mailchimp",
+        "experience": "6 years",
+        "vibe": "Loves learning new skills, very enthusiastic and communicative."
+    },
+    {
+        "name": "Isolde Anderson",
+        "title": "RPA Developer",
+        "skills": "UiPath, Blue Prism, Python, PowerShell, API Integration",
+        "experience": "3 years",
+        "vibe": "Skeptical of recruiters, needs clear compensation and JD upfront to engage."
+    },
+    {
+        "name": "Walter Garcia",
+        "title": "Sales Executive",
+        "skills": "B2B Sales, Salesforce, Lead Generation, Cold Calling, Contract Negotiation",
+        "experience": "7 years",
+        "vibe": "Passive. Will only respond to highly personalized, specific outreach."
+    },
+    {
+        "name": "Victor Clark",
+        "title": "HR Business Partner",
+        "skills": "Employee Relations, Performance Management, SHRM-CP, Onboarding, Compliance",
+        "experience": "12 years",
+        "vibe": "Desperate to leave current toxic workplace, ready to start immediately."
+    },
+    {
+        "name": "Tristan Walker",
+        "title": "Retail Store Manager",
+        "skills": "Team Leadership, Inventory Management, Sales Forecasting, Customer Service, Merchandising",
+        "experience": "5 years",
+        "vibe": "Skeptical of recruiters, needs clear compensation and JD upfront to engage."
+    },
+    {
+        "name": "Peggy Jackson",
+        "title": "Marketing Coordinator",
+        "skills": "Social Media Management, SEO, Content Creation, Hootsuite, Mailchimp",
+        "experience": "8 years",
+        "vibe": "Actively interviewing, eager to jump into a fast-paced startup environment."
+    },
+    {
+        "name": "Tristan Harris",
+        "title": "AI Agent Developer",
+        "skills": "Python, LangChain, OpenAI API, Streamlit, Vector DBs",
+        "experience": "13 years",
+        "vibe": "Passive. Will only respond to highly personalized, specific outreach."
+    },
+    {
+        "name": "Eve Garcia",
+        "title": "Cloud Automation Engineer",
+        "skills": "Azure Virtual Desktop, Citrix, PowerShell, Terraform",
+        "experience": "3 years",
+        "vibe": "Loves learning new skills, very enthusiastic and communicative."
+    },
+    {
+        "name": "Eve Walker",
+        "title": "Sales Executive",
+        "skills": "B2B Sales, Salesforce, Lead Generation, Cold Calling, Contract Negotiation",
+        "experience": "9 years",
+        "vibe": "Desperate to leave current toxic workplace, ready to start immediately."
+    },
+    {
+        "name": "Merlin Harris",
+        "title": "Financial Analyst",
+        "skills": "Financial Modeling, Excel, Variance Analysis, Forecasting, Budgeting",
+        "experience": "9 years",
+        "vibe": "Loves learning new skills, very enthusiastic and communicative."
+    },
+    {
+        "name": "Ivan Thompson",
+        "title": "Retail Store Manager",
+        "skills": "Team Leadership, Inventory Management, Sales Forecasting, Customer Service, Merchandising",
+        "experience": "1 years",
+        "vibe": "Passive. Will only respond to highly personalized, specific outreach."
+    },
+    {
+        "name": "Arthur Davis",
+        "title": "AI Agent Developer",
+        "skills": "Python, LangChain, OpenAI API, Streamlit, Vector DBs",
+        "experience": "14 years",
+        "vibe": "Desperate to leave current toxic workplace, ready to start immediately."
+    },
+    {
+        "name": "Judy Thompson",
+        "title": "Sales Executive",
+        "skills": "B2B Sales, Salesforce, Lead Generation, Cold Calling, Contract Negotiation",
+        "experience": "3 years",
+        "vibe": "Skeptical of recruiters, needs clear compensation and JD upfront to engage."
+    },
+    {
+        "name": "Heidi Lewis",
+        "title": "Marketing Coordinator",
+        "skills": "Social Media Management, SEO, Content Creation, Hootsuite, Mailchimp",
+        "experience": "7 years",
+        "vibe": "Actively interviewing, eager to jump into a fast-paced startup environment."
+    },
+    {
+        "name": "Bob Anderson",
+        "title": "AI Agent Developer",
+        "skills": "Python, LangChain, OpenAI API, Streamlit, Vector DBs",
+        "experience": "8 years",
+        "vibe": "Highly motivated, looking for a leadership role."
+    },
+    {
+        "name": "Bob Jackson",
+        "title": "Senior Cloud Engineer",
+        "skills": "AWS, Kubernetes, Docker, Python, Bash",
+        "experience": "14 years",
+        "vibe": "Skeptical of recruiters, needs clear compensation and JD upfront to engage."
+    },
+    {
+        "name": "Mallory Johnson",
+        "title": "HR Business Partner",
+        "skills": "Employee Relations, Performance Management, SHRM-CP, Onboarding, Compliance",
+        "experience": "9 years",
+        "vibe": "Loves learning new skills, very enthusiastic and communicative."
+    },
+    {
+        "name": "Victor Robinson",
+        "title": "Marketing Coordinator",
+        "skills": "Social Media Management, SEO, Content Creation, Hootsuite, Mailchimp",
+        "experience": "11 years",
+        "vibe": "Passive. Will only respond to highly personalized, specific outreach."
+    },
+    {
+        "name": "Tristan Wilson",
+        "title": "AI Agent Developer",
+        "skills": "Python, LangChain, OpenAI API, Streamlit, Vector DBs",
+        "experience": "8 years",
+        "vibe": "Comfortable in current job but open to remote opportunities with a salary bump."
+    },
+    {
+        "name": "Mark Johnson",
+        "title": "Data Engineer",
+        "skills": "Spark, Hadoop, Python, SQL, Snowflake",
+        "experience": "6 years",
+        "vibe": "Desperate to leave current toxic workplace, ready to start immediately."
+    },
+    {
+        "name": "Judy Smith",
+        "title": "Cloud Automation Engineer",
+        "skills": "Azure Virtual Desktop, Citrix, PowerShell, Terraform",
+        "experience": "4 years",
+        "vibe": "Highly motivated, looking for a leadership role."
+    },
+    {
+        "name": "Guinevere White",
+        "title": "Senior Cloud Engineer",
+        "skills": "AWS, Kubernetes, Docker, Python, Bash",
+        "experience": "11 years",
+        "vibe": "Desperate to leave current toxic workplace, ready to start immediately."
+    },
+    {
+        "name": "Lancelot Robinson",
+        "title": "Cloud Automation Engineer",
+        "skills": "Azure Virtual Desktop, Citrix, PowerShell, Terraform",
+        "experience": "7 years",
+        "vibe": "Comfortable in current job but open to remote opportunities with a salary bump."
+    },
+    {
+        "name": "Lancelot Lee",
+        "title": "Senior Cloud Engineer",
+        "skills": "AWS, Kubernetes, Docker, Python, Bash",
+        "experience": "4 years",
+        "vibe": "Passive. Will only respond to highly personalized, specific outreach."
+    },
+    {
+        "name": "Heidi Brown",
+        "title": "Cloud Automation Engineer",
+        "skills": "Azure Virtual Desktop, Citrix, PowerShell, Terraform",
+        "experience": "9 years",
+        "vibe": "Desperate to leave current toxic workplace, ready to start immediately."
+    },
+    {
+        "name": "Juliet Harris",
+        "title": "Marketing Coordinator",
+        "skills": "Social Media Management, SEO, Content Creation, Hootsuite, Mailchimp",
+        "experience": "7 years",
+        "vibe": "Skeptical of recruiters, needs clear compensation and JD upfront to engage."
+    }
+]

@@ -1,0 +1,38 @@
+Project: AI-Powered Talent Scouting & Engagement Agent
+
+1. The Approach: Building a Cost-Aware Digital Worker
+My core philosophy in designing Catalyst Scout AI was to build an agent that mimics human recruiter intuition while strictly adhering to software engineering best practices regarding compute efficiency. Rather than treating the LLM as a black box that processes every piece of data blindly, I approached this as an intelligent automation pipeline. The system is designed to be "cost-aware," acting as a gatekeeper that sanitizes and routes data before invoking expensive API calls. The goal was to deliver a frictionless UI where recruiters see the most qualified, highly motivated candidates at the top of their dashboard within seconds.
+
+2. System Architecture
+The application is built on a Python/Streamlit stack, utilizing Google's Gemini generative models for advanced semantic evaluation. The architecture follows a strict, multi-stage pipeline:
+
+Input & Sanitization: The Streamlit UI captures the Job Description (JD) and immediately runs a heuristic validation check to prevent empty or malformed queries from progressing.
+
+Domain Discovery Filter (The Gatekeeper): Before any API calls are made, the system parses the JD to classify its domain (e.g., Technical vs. Non-Technical). It then filters the local JSON database via Python set() intersections, instantly discarding irrelevant profiles (e.g., hiding Sales candidates from a Cloud Engineering JD).
+
+Dual-Engine Execution: * Live API Engine: Constructs highly structured, zero-shot prompts fed to Gemini. It evaluates the candidate's Title, Skills, and Experience against the JD to calculate a Match Score. A secondary prompt simulates a personalized outreach message and calculates an Interest Score based on the candidate's hidden "vibe/status."
+
+Local Heuristic Engine (Demo Mode): A local fallback engine that uses keyword overlap and randomized heuristics to bypass API rate limits during high-traffic presentations, ensuring 100% uptime.
+
+Multi-Tier Output Sorting: Results are structured into a Pandas DataFrame and strictly sorted first by highest Match %, and secondarily by highest Interest % as the tie-breaker, perfectly mirroring a recruiter's priorities. The Arcitecture Diagram is given in Readme.MD file in the same repo.
+
+3. Engineering Trade-offs
+In developing this agent, several deliberate trade-offs were made to optimize for production readiness:
+
+Trade-off 1: Pre-Filtering vs. Pure LLM Evaluation
+
+Decision: I implemented a hardcoded Python "Discovery Filter" to block out-of-domain candidates before they reach the LLM.
+
+Why: While relying entirely on the LLM to score everyone provides deeper semantic nuance, it is highly inefficient and expensive. A recruiter does not need an LLM to realize a DevOps engineer is a 0% match for a Retail Manager role. Hard-filtering saves significant API quota, drastically reduces latency, and prevents LLM hallucination on edge cases.
+
+Trade-off 2: Strict Prompt Formatting vs. Conversational Output
+
+Decision: The Gemini prompts are heavily constrained, demanding integer-only outputs and max 15-word reasonings without markdown.
+
+Why: LLMs are naturally conversational, which creates parsing errors when injecting their responses into structured Pandas DataFrames. Sacrificing the "chatty" nature of the AI for rigid, programmatic outputs ensures the UI table renders flawlessly every time.
+
+Trade-off 3: Live Inference vs. Predictability (Demo Mode)
+
+Decision: Including a dedicated heuristic-based "Demo Mode" alongside the live Gemini integration.
+
+Why: Live APIs are subject to network latency and free-tier rate limits. The trade-off is sacrificing the genuine AI evaluation for a simulated local heuristic. This guarantees that during critical hackathon judging or stakeholder demos, the application remains fully functional and responsive under any condition.
